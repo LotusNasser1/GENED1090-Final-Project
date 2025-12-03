@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grove of Chinese Philosophers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <div class="title-container">
+                <div class="chinese-title">哲學之林</div>
+                <h1 class="title">The Grove of Chinese Philosophers</h1>
+            </div>
+            <p class="subtitle">🌱 Six garden dilemmas. One philosophy tree. Discover your path. 🌳</p>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-leaf">🍃</div>
+            <div class="floating-leaf">🍂</div>
+            <div class="floating-leaf">🌿</div>
+            <div class="floating-cloud">☁️</div>
+            <div class="floating-cloud">☁️</div>
+        </div>
+        <div class="mountain-bg"></div>
+    </header>
+
+    <!-- SCROLL DOTS (right side) -->
+    <nav class="scroll-dots" aria-label="Section navigation">
+        <button class="scroll-dot active" data-target="#hero" aria-label="Hero"></button>
+        <button class="scroll-dot" data-target="#intro" aria-label="Intro"></button>
+        <button class="scroll-dot" data-target="#quiz" aria-label="Quiz"></button>
+        <button class="scroll-dot" data-target="#results" aria-label="Results"></button>
+        <button class="scroll-dot" data-target="#grove" aria-label="Grove"></button>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <h2>🌸 How Does Cultivation Work? 🌸</h2>
+            <p class="intro-text">
+                In the classical Chinese philosophical tradition, every thinker asks: How do we cultivate 
+                better people and create a flourishing society? But each offers a radically different answer. 
+                Confucius insists on ritual. Mencius trusts innate goodness. The Daoists let 
+                nature take its course. The Legalists impose strict laws. Each path is like growing a different 
+                tree, same soil, different methods, entirely different results.
+            </p>
+            <p class="intro-text">
+                This interactive project invites you into a garden where six scenarios reveal your 
+                philosophical instincts. As you respond to each dilemma, a tree grows, not randomly, but according 
+                to the cultivation philosophy your choices most closely align with. By the end, you'll discover 
+                which classical Chinese thinker's approach to human transformation mirrors your own intuitions.
+            </p>
+            <div class="intro-icons">
+                <div class="intro-icon">🏛️<br><small>Structure</small></div>
+                <div class="intro-icon">💚<br><small>Compassion</small></div>
+                <div class="intro-icon">⚖️<br><small>Order</small></div>
+                <div class="intro-icon">🌊<br><small>Harmony</small></div>
+            </div>
+            <button class="btn-primary intro-start-btn" onclick="scrollToQuiz()">
+            🎋 Enter the Garden
+        </button>
+        </div>
+    </section>
+
+    <!-- QUIZ / STORY SECTION -->
+    <section id="quiz" class="story-section">
+        <div class="container">
+            <div class="story-area">
+                <!-- Progress Indicator -->
+                <div class="story-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <p class="progress-text">
+                        Scenario <span id="scenario-number">1</span> of <span id="scenario-total">6</span>
+                    </p>
+                </div>
+
+                <!-- Tree Visual (emoji growth) -->
+                <div class="story-tree-container">
+                    <div id="story-tree-display" class="story-tree-display">🌰</div>
+                    <p class="tree-stage-label" id="tree-stage-label">Seed</p>
+                </div>
+
+                <!-- Scenario Content -->
+                <div class="scenario-box">
+                    <h2 class="scenario-title" id="scenario-title"></h2>
+                    <p class="scenario-text" id="scenario-text"></p>
+                    
+                    <div class="choices-container" id="choices-container">
+                        <!-- Choices injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Philosophy Insight -->
+                <div class="story-insight" id="story-insight">
+                    <p>Each choice nurtures a different philosophy. The grove watches which pattern emerges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTS SECTION -->
+    <section id="results" class="results-section hidden">
+        <div class="container">
+            <div class="results-area">
+                <h1 class="results-title">Your Philosophy Tree Has Grown!</h1>
+                
+                <div class="results-tree-container">
+                    <!-- FINAL PHILOSOPHER TREE IMAGE -->
+                    <img id="results-tree-image" src="" alt="Final tree" class="results-tree">
+                </div>
+
+                <div class="results-content">
+                    <h2 id="results-philosophy-name"></h2>
+                    <p id="results-philosophy-type" class="results-type"></p>
+                    <p id="results-tree-chinese" class="results-chinese"></p>
+                    
+                    <div class="results-explanation">
+                        <p id="results-explanation-text"></p>
+                    </div>
+
+                    <div class="results-breakdown">
+                        <h3>Your Journey Through the Garden:</h3>
+                        <div id="choice-summary"></div>
+                    </div>
+
+                    <div class="results-buttons">
+                        <button class="btn-primary" onclick="restartQuiz()">🌱 Cultivate Again</button>
+                        <button class="btn-secondary" onclick="scrollToGrove()">🌳 Explore All Philosophers</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHER GROVE (GALLERY) -->
+    <section id="grove" class="grove-section">
+        <div class="container">
+            <h2>The Philosopher Grove</h2>
+            <p class="section-subtitle">
+                Each tree represents a different vision of human cultivation. Click to learn why these specific 
+                trees were chosen and see the textual evidence from classical sources.
+            </p>
+            
+            <div class="philosopher-grid">
+                <!-- Confucius -->
+                <div class="philosopher-card" data-philosopher="confucius">
+                    <div class="philosopher-icon">
+                        <img src="icons/confucius.png" alt="孔子 Confucius" class="philosopher-img">
+                    </div>
+                    <h3>孔子 Confucius</h3>
+                    <p class="philosophy-type">🌲 The Ceremonial Pine</p>
+                    <p class="tree-chinese">儀松 (Yí Sōng)</p>
+                    <p class="philosophy-desc">Upright structure through ritual and roles.</p>
+                </div>
+
+                <!-- Mencius -->
+                <div class="philosopher-card" data-philosopher="mencius">
+                    <div class="philosopher-icon">
+                        <img src="icons/mencius.png" alt="孟子 Mencius" class="philosopher-img">
+                    </div>
+                    <h3>孟子 Mencius</h3>
+                    <p class="philosophy-type">🍑 The Fruit-Bearer Peach</p>
+                    <p class="tree-chinese">善芽桃 (Shàn Yá Táo)</p>
+                    <p class="philosophy-desc">Innate sprouts of goodness that flourish when protected and nourished.</p>
+                </div>
+
+                <!-- Laozi -->
+                <div class="philosopher-card" data-philosopher="laozi">
+                    <div class="philosopher-icon">
+                        <img src="icons/laozi.png" alt="老子 Laozi" class="philosopher-img">
+                    </div>
+                    <h3>老子 Laozi</h3>
+                    <p class="philosophy-type">🌊 The Yielding Willow</p>
+                    <p class="tree-chinese">柔道柳 (Róu Dào Liǔ)</p>
+                    <p class="philosophy-desc">Strength through softness, flexibility, and flowing with the Dao.</p>
+                </div>
+
+                <!-- Mozi -->
+                <div class="philosopher-card" data-philosopher="mozi">
+                    <div class="philosopher-icon">
+                        <img src="icons/mozi.png" alt="墨子 Mozi" class="philosopher-img">
+                    </div>
+                    <h3>墨子 Mozi</h3>
+                    <p class="philosophy-type">🌳 The Productive Mulberry</p>
+                    <p class="tree-chinese">利民桑 (Lì Mín Sāng)</p>
+                    <p class="philosophy-desc">Practical benefit and impartial care, usefulness over ornament.</p>
+                </div>
+
+                <!-- Zhuangzi -->
+                <div class="philosopher-card" data-philosopher="zhuangzi">
+                    <div class="philosopher-icon">
+                        <img src="icons/zhuangzi.png" alt="莊子 Zhuangzi" class="philosopher-img">
+                    </div>
+                    <h3>莊子 Zhuangzi</h3>
+                    <p class="philosophy-type">🌴 The Useless Gnarled Oak</p>
+                    <p class="tree-chinese">無用櫟 (Wú Yòng Lì)</p>
+                    <p class="philosophy-desc">Freedom through wildness and perspective transformation.</p>
+                </div>
+
+                <!-- Xunzi -->
+                <div class="philosopher-card" data-philosopher="xunzi">
+                    <div class="philosopher-icon">
+                        <img src="icons/xunzi.png" alt="荀子 Xunzi" class="philosopher-img">
+                    </div>
+                    <h3>荀子 Xunzi</h3>
+                    <p class="philosophy-type">🎋 The Disciplined Bonsai</p>
+                    <p class="tree-chinese">矯性盆栽 (Jiǎo Xìng Pén Zāi)</p>
+                    <p class="philosophy-desc">Crooked nature bent straight through sustained ritual training.</p>
+                </div>
+
+                <!-- Legalists (big card with two inner cards) -->
+                <div class="philosopher-card legalist-card" data-philosopher="legalist">
+                    <div class="philosopher-icon">
+                        <img src="icons/solider.png" alt="法家 Legalists" class="philosopher-img">
+                    </div>
+
+                    <h3>法家 Legalists</h3>
+                    <p class="philosophy-type">🌿 The Regimented Hedge</p>
+                    <p class="tree-chinese">法籬 (Fǎ Lí) — 商鞅 & 韓非子</p>
+                    <p class="philosophy-desc">
+                        Transform humans into a uniform hedge through law, 
+                        measurement, and strategic control.
+                    </p>
+
+                    <div class="legalist-inner">
+                        <!-- Lord Shang mini-card -->
+                        <div class="mini-leg-card" onclick="selectPhilosopher('shang')">
+                            <div class="mini-leg-icon">
+                                <img src="icons/lord-shang.png" alt="商鞅 Lord Shang">
+                            </div>
+                            <h4>商鞅 Lord Shang</h4>
+                            <p class="mini-leg-type">📏 Measured Uniformity</p>
+                            <p class="mini-leg-text">
+                                Agriculture, warfare, and collective punishment, every action quantified, 
+                                every deviation punished.
+                            </p>
+                        </div>
+
+                        <!-- Han Feizi mini-card -->
+                        <div class="mini-leg-card" onclick="selectPhilosopher('hanfei')">
+                            <div class="mini-leg-icon">
+                                <img src="icons/hanfeizi.png" alt="韓非子 Han Feizi">
+                            </div>
+                            <h4>韓非子 Han Feizi</h4>
+                            <p class="mini-leg-type">🎍 Strategic Control</p>
+                            <p class="mini-leg-text">
+                                Laws, techniques, and positional power, the ruler as inscrutable strategist 
+                                manipulating rewards and punishments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Inward Training -->
+                <div class="philosopher-card" data-philosopher="inward">
+                    <div class="philosopher-icon">
+                        <img src="icons/inward-training2.png" alt="內業 Inward Training" class="philosopher-img">
+                    </div>
+                    <h3>內業 Inward Training</h3>
+                    <p class="philosophy-type">✨ The Luminous Bodhi</p>
+                    <p class="tree-chinese">氣光樹 (Qì Guāng Shù)</p>
+                    <p class="philosophy-desc">Inner cultivation through breath, stillness, and aligned vital energy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHER DETAIL SECTION (dynamic) -->
+    <section id="philosopher-detail" class="detail-section hidden">
+        <div class="container">
+            <button class="btn-back" onclick="hideDetail()">← Back to Grove</button>
+            <div class="detail-area">
+                <div class="detail-tree">
+                    <img id="detail-tree-image" src="" alt="Philosopher tree" class="detail-tree-img">
+                </div>
+                <div class="detail-content">
+                    <h2 id="detail-name"></h2>
+                    <p id="detail-type" class="detail-type"></p>
+                    <p id="detail-chinese" class="detail-chinese"></p>
+                    <p id="detail-description" class="detail-description"></p>
+                    <div id="detail-extra" class="detail-extra"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>🏛️ An exploration of Classical Chinese Philosophy through cultivation metaphors 🌿</p>
+            <div class="footer-content">
+                <div class="footer-quote">
+                    <p>"Every method of cultivation grows a different tree. Every tree creates a different world."</p>
+                </div>
+                 <a class="footer-sources" href="sources.html" target="_blank">
+                📚 Sources & Citations
+            </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

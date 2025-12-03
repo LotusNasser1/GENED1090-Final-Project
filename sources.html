@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sources & Citations</title>
+
+    <!-- Import your main CSS variables so colors match -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background: linear-gradient(180deg, var(--white) 0%, var(--light-green) 50%, var(--baby-green) 100%);
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+            padding: 60px 20px;
+            color: var(--text-dark);
+        }
+
+        .sources-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px 50px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px var(--shadow);
+            border: 3px solid var(--baby-green);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--accent-green);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px rgba(200,230,201,0.4);
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 2;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: var(--dark-green);
+            text-decoration: underline;
+        }
+
+        /* Decorative blossom accents */
+        .blossom {
+            position: absolute;
+            opacity: 0.15;
+            font-size: 4rem;
+            animation: floatBlossom 6s infinite ease-in-out;
+        }
+
+        .blossom.left { left: 5%; top: 12%; }
+        .blossom.right { right: 7%; top: 18%; animation-delay: 2s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatBlossom {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(8deg); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blossom left">🌸</div>
+    <div class="blossom right">🌸</div>
+
+    <div class="sources-container">
+        <h1>📚 Sources & Citations</h1>
+        <p class="subtitle">Texts, translations, and academic materials used for this project.</p>
+
+        <ul>
+            <!-- You will fill these in later -->
+            <li><strong>Mencius</strong> — translation by …</li>
+            <li><strong>Analects</strong> — translation by …</li>
+            <li><strong>Daodejing</strong> — translation by …</li>
+            <li><strong>Zhuangzi</strong> — translation by …</li>
+            <li><strong>Mozi</strong> — translation by …</li>
+            <li><strong>Xunzi</strong> — translation by …</li>
+            <li><strong>Han Feizi</strong> — translation by …</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+🎨 COLOR SCHEME - The Grove of Chinese Philosophers
+================================================
+
+PRIMARY COLORS:
+- Baby Green:     #C8E6C9  ■ (Main theme color)
+- Light Green:    #E8F5E9  ■ (Background accent)
+- Dark Green:     #81C784  ■ (Hover/active states)
+- Accent Green:   #66BB6A  ■ (Buttons, highlights)
+
+NEUTRALS:
+- White:          #FFFFFF  ■ (Primary background)
+- Soft White:     #FAFAFA  ■ (Canvas background)
+- Text Dark:      #2E2E2E  ■ (Main text)
+- Text Light:     #5A5A5A  ■ (Secondary text)
+
+EFFECTS:
+- Shadows:        rgba(0,0,0,0.1-0.15)
+- Smooth transitions and hover effects throughout
+
+TYPOGRAPHY:
+- Font Family: Georgia, Times New Roman (serif)
+- Clean, academic aesthetic
+
+================================================
+
+FILE STRUCTURE:
+📁 grove-of-philosophers/
+  ├── 📄 index.html      (Main HTML structure)
+  ├── 📄 styles.css      (All styling with baby green theme)
+  ├── 📄 script.js       (Interactive tree logic)
+  ├── 📄 README.md       (Instructions)
+  └── 📁 icons/          (All philosopher icons)
+      ├── confucius.png
+      ├── mencius.png
+      ├── laozi.png
+      ├── mozi.png
+      ├── zhuangzi.png
+      ├── xunzi.png
+      ├── shangyang.png
+      ├── hanfei.png
+      ├── bamboo.png
+      ├── lotus.png
+      └── ... (many more decorative icons)
