@@ -727,10 +727,9 @@ document.querySelectorAll(".scroll-dot").forEach(dot => {
 
 // PHILOSOPHER CARD CLICKS
 document.querySelectorAll(".philosopher-card").forEach(card => {
-    card.addEventListener("click", (e) => {
-        // Prevent triggering if clicking on a mini-card
-        if (e.target.closest(".mini-leg-card")) return;
-        
+    if (card.classList.contains("legalist-card")) return;
+
+    card.addEventListener("click", () => {
         const philId = card.getAttribute("data-philosopher");
         showDetail(philId);
     });

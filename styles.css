@@ -980,7 +980,8 @@ body {
 
 /* Bigger Legalist card with two inner mini cards */
 .legalist-card {
-    grid-column: span 2;              /* make it wider than a normal card on large screens */
+    grid-column: span 2;              
+    cursor: default;                 
 }
 
 .legalist-inner {
