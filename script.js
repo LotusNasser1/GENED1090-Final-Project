@@ -8,11 +8,12 @@ const PHILOSOPHERS = {
         type: "🌲 The Ceremonial Pine",
         chineseTree: "儀松 (Yí Sōng)",
         description:
-            "Like a carefully pruned pine, Confucian cultivation is upright, layered, and structured. Ritual, hierarchy, and patterned roles keep the social world standing tall.",
-        treeRationale: "The pine is chosen because Confucius emphasizes upright moral character and hierarchical structure. In the Analects, he states that 'the superior person is dignified but not proud,' much like a pine that stands tall through all seasons. The pine's evergreen nature mirrors Confucius's commitment to unchanging moral principles and ritual practice.",
-        evidence: "From the Analects: 'The Master said, \"At fifteen I set my heart on learning; at thirty I took my stand; at forty I came to be free from doubts...\"' (2.4). This progression reflects the pine's steady, structured growth through predictable stages, each building upon the last in ceremonial order.",
+            "Like a carefully pruned pine, Confucian cultivation is upright, layered, and structured. Ritual and patterned roles play keep the social world standing tall.",
+        treeRationale: "Confucius is paired with a pine because pines are upright, evergreen, and grow through long, disciplined seasons. In early China they often stood near graves and ancestral halls as quiet symbols of continuity. In a similar way, Confucian self-cultivation emphasizes steady and ritualized practice that help the social world remain straight and enduring.",
+        evidence: "Analects 2.4 maps Confucius’s own life as a series of cultivated stages: \\\"The Master said, 'At fifteen I set my mind upon learning; at thirty I took my place in society; at forty I became free of doubts; at fifty I understood Heaven’s Mandate; at sixty my ear was attuned; and at seventy I could follow my heart’s desires without overstepping the bounds of propriety.'\\\"<br><br>" +
+        "This picture of step-by-step growth is very pine-like: ring after ring, layer after layer, each stage firmly rooted before the next. The tree metaphor shows how, for Confucius, a lifetime of ritual and learning slowly shapes a person so that even their spontaneous desires naturally stay within proper bounds.",
         extra:
-            "In your garden choices, Confucian answers prioritized proper form, respect for rank, and teaching people how to behave before simply helping them.",
+             "In your garden choices, Confucian answers showed up when you prioritized proper form, respect for rank, and teaching people how to behave before simply helping them. You often wanted things to be done correctly as well as kindly.",
         treeImages: {
             full: "trees/confucius_tree.png"
         }
@@ -24,74 +25,102 @@ const PHILOSOPHERS = {
         chineseTree: "善芽桃 (Shàn Yá Táo)",
         description:
             "Mencius sees people as sprouts of goodness. Given protection and nourishment, those sprouts become heavy branches of compassion, like a peach tree loaded with fruit.",
-        treeRationale: "The peach tree is selected because Mencius uses agricultural metaphors extensively, particularly the famous 'sprout' analogy. The peach tree requires careful nurturing but naturally produces abundant, sweet fruit—just as human goodness, when cultivated, naturally flourishes into compassion and righteousness.",
-        evidence: "From Mengzi: 'All human beings have a mind that cannot bear to see the suffering of others' (2A6). The four sprouts—compassion, shame, courtesy, and moral discernment—are like tender shoots that, if nurtured, grow into the four cardinal virtues. Mencius writes: 'These four sprouts are like a fire beginning to burn or a spring beginning to well up.'",
+        treeRationale:
+            "Mencius is paired with a fruit tree because his view of human nature begins with small, living sprouts that can ripen into something abundant. A peach starts as a tender bud that must be cared for as it grows; in time it becomes sweet fruit that others can enjoy. In the same way, Mencius thinks our inborn moral sprouts, when we take care of them and let them develop, they grow into full benevolence.",
+        evidence:
+            "From Mengzi 2A6: \\\"Humans all have hearts that are not unfeeling toward others.\\\" Mencius uses this to argue that we all have a heart of compassion, a moral \\\"sprout\\\" that can be developed into the virtue of benevolence.<br><br>" +
+            "The Fruit-Bearer Peach picks up this sprout idea: the first stirrings of compassion are like tiny buds on a peach branch. With time and care, they can ripen into visible, generous fruit that others can share, just as cultivated benevolence overflows in concrete care for people.",
         extra:
-            "Mencian choices showed up when you trusted your immediate compassion more than rules or penalties, especially with the crying child and thieves.",
+            "In your garden choices, Mencian answers appeared when you trusted compassion first and only later thought about rules, reputation, or punishment. You tended to see basic decency as something already there that should be allowed to grow.",
         treeImages: {
             full: "trees/mencius_tree.png"
         }
     },
+
     laozi: {
         id: "laozi",
         name: "老子 Laozi",
         type: "🌊 The Yielding Willow",
         chineseTree: "柔道柳 (Róu Dào Liǔ)",
         description:
-            "Laozi's willow bends instead of breaking. Its strength comes from softness and flexibility, following the Dao instead of forcing outcomes.",
-        treeRationale: "The willow embodies Laozi's core teaching that 'the soft overcomes the hard.' Willows bend with wind and water, never resisting, yet they endure where rigid trees snap. Their branches trail downward in wu-wei (effortless action), following gravity rather than striving upward.",
-        evidence: "From the Daodejing: 'The highest good is like water. Water benefits the ten thousand things and does not compete' (Chapter 8). And: 'When alive, humans are soft and supple; when dead, they are hard and rigid... Thus the hard and rigid are companions of death, while the soft and supple are companions of life' (Chapter 76). The willow's yielding nature perfectly captures this paradoxical strength.",
+            "Laozi’s willow bends instead of breaking. Its strength comes from softness and flexibility, following the Way rather than forcing outcomes.",
+        treeRationale:
+            "Laozi is paired with a willow because its branches are soft, hanging, and able to sway with wind and water. It doesn’t win by being rigid; it survives by yielding. That matches Laozi’s idea that real strength is found in softness, humility, and going with the natural flow (wu wei) rather than trying to stand stiff against it.",
+        evidence:
+            "From the Daodejing: Chapter 40 says, \\\"Turning back is how the Way moves; weakness is how the Way operates.\\\" Chapter 76 adds: \\\"When alive human beings are supple and weak; when dead they are stiff and strong… The stiff and the strong are the disciples of death; the supple and weak are the disciples of life.\\\" Chapter 78 then compares water to the softest thing in the world, yet able to overcome what is hard and strong.<br><br>" +
+            "The yielding willow and the idea of wu wei go together here. The willow lives by bending with wind and rain instead of resisting them, just as wu wei means acting in a way that does not force or contend, like water finding its path. For Laozi, this kind of softness and non-coercive action is the living strength that endures where hard, rigid things eventually break.",
         extra:
-            "You often chose to step back, intervene minimally, or let things resolve on their own — classic Daoist wu-wei (effortless action).",
+            "In your garden choices, Laozi showed up when you stepped back, did less, or let things resolve on their own instead of pushing harder. Those moments of letting things flow were your moves in the direction of wu wei.",
         treeImages: {
             full: "trees/laozi_tree.png"
         }
     },
+
+
     zhuangzi: {
         id: "zhuangzi",
         name: "莊子 Zhuangzi",
         type: "🌴 The Useless Gnarled Oak",
         chineseTree: "無用櫟 (Wú Yòng Lì)",
         description:
-            "Zhuangzi loves the strange and the untamed. His oak lives a long carefree life precisely because no one can turn it into timber.",
-        treeRationale: "The gnarled oak comes directly from Zhuangzi's parable of the 'useless tree.' Its twisted, knotted form makes it worthless for timber, so it grows to a magnificent old age, untouched by axes. This represents Zhuangzi's celebration of uselessness and freedom from conventional purposes.",
-        evidence: "From the Zhuangzi: Carpenter Shi passes by a sacred oak at a shrine and refuses to look at it. His apprentice asks why. The carpenter replies: 'It's a worthless tree. Make boats and they'd sink, make coffins and they'd rot, make tools and they'd break. There's no use for it, and that's why it's lived so long' (Chapter 4). Later, the tree appears to the carpenter in a dream and says: 'What would you compare me to, some useful tree? All useful trees are cut down. Only useless trees live out their natural lives.'",
+            "Zhuangzi loves the strange and the untamed. His oak is the one carpenters call ‘useless,’ so it’s left alone to grow in its own odd way.",
+        treeRationale:
+            "Zhuangzi is paired with a gnarled oak because, in his stories, this particular tree is too twisted and uneven for standard lumber. Carpenters judge it ‘useless’ for their work, so no one bothers to cut it down. That matches Zhuangzi’s interest in lives and ways of being that fall outside normal standards but end up freer and less controlled.",
+        evidence:
+            "From the Zhuangzi, Huizi says to Zhuangzi: \\\"I have a big tree. Its trunk is so gnarled it won't take a chalk line, and its branches are so twisted they won't fit a compass or square… Your talk is similarly big and useless.\\\"<br><br>" +
+            "Zhuangzi answers that a tree like this could be planted in open ground, where you simply wander around it or lie down and rest in its shade. Because its wood is no good for straight boards and tools, no one cuts it, and it is able to live out its full span. The Useless Gnarled Oak in your garden comes from this story: the very features that make it ‘useless’ to carpenters are what keep it from being chopped up. Zhuangzi uses this to question ordinary ideas of usefulness and to show how not fitting into fixed roles can leave a person or thing less used up by the world.",
         extra:
-            "When you treat problems as chances to rethink values or laugh at fixed categories, you are answering like Zhuangzi.",
+            "In your garden choices, Zhuangzi appeared when you questioned ordinary assumptions, refused to treat everything as a tool or a metric, or turned a problem into a chance to see things from a different angle instead of just trying to fix it.",
         treeImages: {
             full: "trees/zhuangzi_tree.png"
         }
     },
+
+
+
     mozi: {
         id: "mozi",
         name: "墨子 Mozi",
         type: "🌳 The Productive Mulberry",
         chineseTree: "利民桑 (Lì Mín Sāng)",
         description:
-            "Mozi's tree is practical and generous. The mulberry is useful to ordinary people: shade, leaves, fruit, benefits that can be measured.",
-        treeRationale: "The mulberry tree represents Mozi's philosophy of practical benefit (li) and universal care. Mulberry trees were essential to Chinese silk production and provided food (mulberries) for common people. Unlike ornamental trees valued for ritual purposes, the mulberry serves everyone impartially.",
-        evidence: "From the Mozi: 'When the ancient sage-kings governed the world, they always valued frugality in expenditure... They built palaces only high enough to avoid dampness, walls only thick enough to keep out wind and cold' (Chapter 20, 'Moderation in Expenditures'). Mozi criticizes wasteful rituals and elaborate funerals, arguing instead for practical benefit: 'Does it benefit the people? This is the standard.' The mulberry's multiple uses for silk, food, and shade embody this utilitarian ethic.",
+            "Mozi’s tree is practical and generous. The mulberry is useful to ordinary people: shade, leaves, fruit, benefits that can be measured.",
+        treeRationale:
+            "Mozi is paired with a mulberry because it is a work tree, not a show tree. Mulberries feed silkworms, clothe people, give fruit, and offer shade to those working the fields. They are planted for what they do for common people, not for ceremony or display. That matches Mozi’s focus on usefulness and on policies that bring measurable benefit to the many rather than glory to the few.",
+        evidence:
+            "From the Mozi, in the chapters on Moderation in Expenditures: \\\"The sage-kings never add anything that is not useful. And so they never waste their resources or overburden their people yet are able to generate great benefits… To eliminate everything that is not useful is to carry out the Way of the sage-kings and offer great benefit to the world.\\\"<br><br>" +
+            "The Productive Mulberry turns this standard into a tree. It is not prized for luxury or ornament; its value lies in steady, practical returns. In the same way, Mozi measures teachings and policies by how much concrete benefit they produce for ordinary people and cuts away what is merely decorative or wasteful.",
         extra:
-            "Mozi shows up when you care about equal distribution, community benefit, and avoiding wasteful luxury.",
+            "In your garden choices, Mozi showed up when you cared about equal distribution, community benefit, and avoiding wasteful luxury so that basic needs could be met.",
         treeImages: {
             full: "trees/mozi_tree.png"
         }
     },
-    xunzi: {
-        id: "xunzi",
-        name: "荀子 Xunzi",
-        type: "🎋 The Disciplined Bonsai",
-        chineseTree: "矯性盆栽 (Jiǎo Xìng Pén Zāi)",
-        description:
-            "For Xunzi, raw human nature is crooked wood that must be steamed, bent, and wired into shape. The bonsai is beautiful precisely because of long training.",
-        treeRationale: "The bonsai perfectly captures Xunzi's belief that human nature is fundamentally crooked and requires deliberate artifice to become good. Just as bonsai cultivation involves wiring, pruning, and shaping over many years, Xunzi argues that human transformation requires sustained ritual training and discipline.",
-        evidence: "From the Xunzi: 'The nature of man is evil; his goodness is only acquired by training' (Chapter 23). More specifically: 'Crooked wood must be steamed and bent before it becomes straight; blunt metal must be ground and whetted before it becomes sharp' (Chapter 1, 'Encouraging Learning'). And: 'A piece of wood as straight as a plumb line may be bent into a circle as perfect as if drawn with a compass... because the tools have been applied to it. Thus, wood can be made straight by tools, and men can be made good by training.'",
-        extra:
-            "You answer like Xunzi when you focus on exams, training, instruction, and correcting people so they will improve over time.",
-        treeImages: {
-            full: "trees/xunzi_tree.png"
-        }
-    },
+
+
+xunzi: {
+    id: "xunzi",
+    name: "荀子 Xunzi",
+    type: "🎋 The Disciplined Bonsai",
+    chineseTree: "矯性盆栽 (Jiǎo Xìng Pén Zāi)",
+    description:
+        "For Xunzi, raw human nature is like crooked wood. It only becomes upright and beautiful through long, deliberate training in ritual and standards.",
+    treeRationale:
+        "Xunzi is paired with a bonsai because bonsai trees do not end up in their shape by themselves. A bonsai master wires, trims, and bends the branches over many years until they hold a carefully trained form. That matches Xunzi’s claim that goodness is not natural but produced by sustained, external discipline from teachers and law.",
+    evidence:
+        "From the Xunzi, Chapter 23: \\\"Crooked wood must await steaming and straightening on the shaping frame, and only then does it become straight.… Now since people’s nature is bad, they must await teachers and proper models, and only then do they become correct in their behavior. They must obtain ritual and the standards of righteousness, and only then do they become well ordered.\\\"<br><br>" +
+        "The bonsai makes this image concrete. In Xunzi’s metaphor, human nature is the crooked wood; teachers and standards are like the shaping frame and tools in the hands of a bonsai master. A bonsai shows how years of guided cutting and bending can turn a wild branch into a precise form. For Xunzi, moral cultivation works the same way: goodness is a crafted shape imposed on our nature by long practice, not something that grows straight on its own.",
+    extra:
+        "In your garden choices, Xunzi showed up when you emphasized training, correction, exams, and firm structure as the way people improve, rather than trusting spontaneous goodness or gentle guidance.",
+    treeImages: {
+        full: "trees/xunzi_tree.png"
+    }
+},
+
+
+
+
+
     legalist: {
         id: "legalist",
         name: "法家 Legalist (Lord Shang & Han Feizi)",
@@ -108,50 +137,63 @@ const PHILOSOPHERS = {
         }
     },
     shang: {
-        id: "shang",
-        name: "商鞅 Lord Shang",
-        type: "📏 The Measured Hedge Section",
-        chineseTree: "量法籬 (Liáng Fǎ Lí)",
-        description:
-            "Lord Shang's portion of the Legalist hedge is obsessively measured. Every branch must align with strict agricultural and military quotas. Deviation is immediately visible and punished.",
-        treeRationale: "The measured hedge section emphasizes Lord Shang's focus on quantifiable standards and agricultural-military mobilization. His reforms turned Qin into a state where every household's production could be measured, every soldier's kills counted, and rewards distributed with mathematical precision.",
-        evidence: "From the Book of Lord Shang: 'The way to organize a state well is to have laws that are clear and rewards and punishments that are certain' (Chapter 5). Lord Shang implemented the 'mutual responsibility system' (baojia) where groups of families were collectively punished for any individual's crime. His reforms created seventeen ranks of merit based solely on battlefield performance: 'He who kills one enemy is granted one degree of rank... he who kills two enemies has the land of two households assigned to him.'",
-        extra:
-            "You aligned with Lord Shang when you emphasized measurable standards, group punishment, or rewarding only concrete achievements.",
-        treeImages: {
-            full: "trees/legalist_tree.png"
-        }
-    },
-    hanfei: {
-        id: "hanfei",
-        name: "韓非子 Han Feizi",
-        type: "🎍 The Strategic Bamboo",
-        chineseTree: "術竹 (Shù Zhú)",
-        description:
-            "Han Feizi's bamboo appears flexible but is actually a system of hidden techniques. It grows in sections—each one representing shu (technique), fa (law), and shi (positional power).",
-        treeRationale: "Bamboo represents Han Feizi's sophisticated theory of power techniques. Like bamboo that appears simple but has complex internal structure and grows through strategic node points, Han Feizi's system combines multiple methods: laws (fa), techniques of control (shu), and positional power (shi). Bamboo's hollow center also suggests the ruler's emptiness—maintaining inscrutability.",
-        evidence: "From the Han Feizi: 'The enlightened ruler controls his ministers by means of two handles alone. The two handles are punishment and favor' (Chapter 7). He advises rulers to remain inscrutable: 'The Way of the ruler is to treasure stillness and reserve. Without revealing his desires, he causes his ministers to show their colors' (Chapter 5). Han Feizi synthesizes Shen Buhai's shu (techniques), Shang Yang's fa (laws), and Shen Dao's shi (positional power) into one comprehensive system—like bamboo segments that appear separate but are internally connected.",
-        extra:
-            "Han Feizi thinking appeared when you focused on control techniques, information asymmetry, or strategic suspicion rather than just punishment.",
-        treeImages: {
-            full: "trees/hanfei-tree.png"
-        }
-    },
-    inward: {
-        id: "inward",
-        name: "內業 Inward Training",
-        type: "✨ The Luminous Bodhi",
-        chineseTree: "氣光樹 (Qì Guāng Shù)",
-        description:
-            "Inward Training focuses on quiet breath and settled qi. Like a luminous bodhi tree, transformation begins in stillness and radiates outward.",
-        treeRationale: "The bodhi tree is chosen for its association with enlightenment through meditation and its glowing, peaceful presence. While bodhi trees are more commonly associated with Buddhism, they represent the internal cultivation and luminous qi that Inward Training emphasizes. The tree's wide canopy and deep roots mirror the text's focus on grounding oneself through breath while expanding awareness.",
-        evidence: "From Inward Training: 'For all [to practice] the Way: You must coil, you must contract, you must uncoil, you must expand, you must be firm, you must be regular [in this practice]' (Lines 9-10). And: 'With a well-ordered mind within, well-ordered words issue forth from the mouth, and well-ordered tasks are imposed on others' (Lines 61-63). The text emphasizes: 'If you can be aligned and tranquil, only then can you be stable... The vitality of all people inevitably comes from their peace of mind. When anxious, you lose this guiding thread; when angry, you lose this basic point.'",
-        extra:
-            "You align with Inward Training when you choose stillness, breath, meditation, or self-cultivation over external control.",
-        treeImages: {
-            full: "trees/inward_tree.png"
-        }
+    id: "shang",
+    name: "商鞅 Lord Shang",
+    type: "📏 The Measured Hedge",
+    chineseTree: "量法籬 (Liáng Fǎ Lí)",
+    description:
+        "Lord Shang’s part of the hedge is cut to exact heights and thicknesses. Every segment is judged by fixed standards, and anything that sticks out gets trimmed back.",
+    treeRationale:
+        "Lord Shang is paired with a measured hedge section because his reforms turn people into units that can be ranked and compared by clear, external standards. He wants fixed laws, fixed quotas for grain, and fixed scales of military merit so the ruler can see at a glance who measures up. A hedge cut along a ruler’s line, each plant forced into the same shape, matches this vision of a population organized by measurement and punishment.",
+    evidence:
+        "From the Book of Lord Shang, in the discussion of unified rewards: \\\"What I mean by the unifying of rewards is that profits and emoluments, office and rank, should be determined exclusively by military merit, and that there should not be different reasons for distributing them.\\\"<br><br>" +
+        "Here Lord Shang insists that all honors and material rewards must be tied to one measurable standard: military achievement. The Measured Hedge Section turns this into a visual: each hedge-plant stands in a row, its value checked against the same ruler. There is no room for soft factors like learning, ritual, or personal virtue, only what can be counted. Any branch that fails to match the line is cut back, just as any person who does not fit the law and quota system is punished.",
+    extra:
+        "In your garden choices, Lord Shang showed up when you emphasized strict standards, group responsibility, and hard incentives over feelings, relationships, or tradition.",
+    treeImages: {
+        full: "trees/legalist_tree.png"
     }
+},
+
+hanfei: {
+    id: "hanfei",
+    name: "韓非子 Han Feizi",
+    type: "🎍 The Strategic Bamboo",
+    chineseTree: "術竹 (Shù Zhú)",
+    description:
+        "Han Feizi’s bamboo looks simple from a distance, but up close it is a hard, jointed stalk with an empty center, standing in a tight grove of similar stems.",
+    treeRationale:
+        "Han Feizi is paired with bamboo because bamboo grows in clear, separate segments around a hollow core. The joints are firm points where the stalk can be cut or controlled, while the inside stays empty and hidden. This matches his vision of rulership: a few hard, external handles of law, punishment, and reward that everyone feels, combined with a ruler who remains inwardly opaque, letting the system rather than himself do the work.",
+    evidence:
+        "From Han Feizi, “The Way of the Ruler”: \\\"The Way [of the ruler] lies in what cannot be seen; its use lies in what cannot be understood. Be empty and tranquil without engaging in affairs, and from the darkness observe others’ faults. Observe but do not be observed; listen but do not be heard; understand but do not be understood… Discard your knowledge, leave behind your ability, and those below will be unable to understand your intentions.\\\"<br><br>" +
+        "The Strategic Bamboo turns this into a tree image. The ruler’s advice to be empty and tranquil and hard to read is like the hollow center of a bamboo stalk: the real core is hidden from view. At the same time, the visible segments are like his fixed laws and techniques, clear outer structure that channels power and behavior. Each joint is a control point, just as Han Feizi thinks the ruler should tightly hold a few key handles of punishment and favor while keeping his own mind concealed. The bamboo grove thus captures a world where order comes from a rigid, segmented system surrounding an unreadable center.",
+    extra:
+        "In your garden choices, Han Feizi appeared when you focused on who actually controls rewards and punishments, and when you preferred tight systems that work even if the person at the top stays distant and hard to read.",
+    treeImages: {
+        full: "trees/hanfei-tree.png"
+    }
+},
+
+
+
+   inward: {
+    id: "inward",
+    name: "內業 Inward Training",
+    type: "✨ The Luminous Bodhi",
+    chineseTree: "氣光樹 (Qì Guāng Shù)",
+    description:
+        "Inward Training focuses on quiet breath, aligned posture, and settled vital energy. Like a luminous bodhi tree, transformation begins in hidden roots and shows up as a calm, steady presence.",
+    treeRationale:
+        "Inward Training is paired with a bodhi-like tree because it imagines change starting from the inside out. A bodhi tree sinks roots into a deep, unseen source and then offers wide, cool shade. In the same way, the text emphasizes aligning the body, calming the heart-mind, and gathering vital essence within so that clarity and stability naturally show up on the outside.",
+    evidence:
+        "From Inward Training Chapter 8: \\\"If you can be aligned and tranquil, only then can you be stable. With a stable heart at your core, your ears and eyes will be acute and clear, and your four limbs firm and steady; you can thereby make a dwelling place for vital essence.\\\"<br><br>" +
+        "The Luminous Bodhi turns this inner–outer pattern into a tree image. Inner alignment and tranquility are like the deep roots and hidden water source; the clear senses and firm limbs are like the strong trunk and spreading branches. For Inward Training, real cultivation is about quietly arranging breath, posture, and heart-mind so that a stable inner source can sustain everything that grows from it, the way a bodhi tree’s unseen roots support its calm, sheltering canopy.",
+    extra:
+        "In your garden choices, Inward Training appeared when you chose stillness, breathing, or inner alignment over punishment, persuasion, or external control. You were most drawn to tending the inner atmosphere first and letting your actions flow from there.",
+    treeImages: {
+        full: "trees/inward_tree.png"
+    }
+}
 };
 
 // emoji stages for quiz tree
