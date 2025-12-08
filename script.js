@@ -1,9 +1,6 @@
-// small helper
 const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 
-// ========================================
 // PHILOSOPHER DEFINITIONS WITH EVIDENCE
-// ========================================
 const PHILOSOPHERS = {
     confucius: {
         id: "confucius",
@@ -168,9 +165,7 @@ const TREE_STAGES = [
     { label: "Full Philosophy Tree", emoji: "🌳🏛️" }
 ];
 
-// ========================================
-// SCENARIOS (6 total)
-// ========================================
+// SCENARIOS 
 const SCENARIOS = [
     {
         title: "🌱 The Crying Child",
@@ -451,9 +446,8 @@ const SCENARIOS = [
     }
 ];
 
-// ========================================
+
 // STATE
-// ========================================
 let currentScenario = 0;
 let philosophyScores = {
     confucius: 0,
@@ -467,13 +461,12 @@ let philosophyScores = {
 };
 let choiceHistory = [];
 
-// ========================================
+
 // SCROLL NAVIGATION
-// ========================================
-function scrollToSection(selector) {
+function scrollToSection(selector, smooth = false) {
     const section = document.querySelector(selector);
     if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+        section.scrollIntoView({ behavior: smooth ? "smooth" : "auto" });
     }
 }
 
@@ -485,9 +478,7 @@ function scrollToGrove() {
     scrollToSection("#grove");
 }
 
-// ========================================
 // QUIZ LOGIC
-// ========================================
 function startQuiz() {
     currentScenario = 0;
     philosophyScores = {
@@ -611,11 +602,9 @@ function restartQuiz() {
     scrollToSection("#quiz");
 }
 
-// ========================================
+
 // PHILOSOPHER CARDS & DETAIL VIEW
-// ========================================
 function showDetail(philId) {
-    // map shang/hanfei to their own data if you have them separately
     let phil = PHILOSOPHERS[philId];
     if (!phil) phil = PHILOSOPHERS.legalist;
 
@@ -624,7 +613,6 @@ function showDetail(philId) {
     document.getElementById("detail-chinese").textContent = phil.chineseTree;
     document.getElementById("detail-description").textContent = phil.description;
     
-    // Add the evidence sections
     const extraDiv = document.getElementById("detail-extra");
     extraDiv.innerHTML = `
         <div class="evidence-section">
@@ -658,17 +646,16 @@ function selectPhilosopher(id) {
     showDetail(id);
 }
 
-// ========================================
+
 // SCROLL DOTS
-// ========================================
 function updateScrollDots() {
-    const sections = ["#hero", "#intro", "#quiz", "#results", "#grove"];
+    const sections = ["#hero", "#intro", "#grove", "#quiz", "#results"];
     let currentIndex = 0;
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
     sections.forEach((selector, index) => {
         const section = document.querySelector(selector);
-        if (section && scrollPosition >= section.offsetTop) {
+        if (section && !section.classList.contains('hidden') && scrollPosition >= section.offsetTop) {
             currentIndex = index;
         }
     });
@@ -683,17 +670,20 @@ function updateScrollDots() {
 }
 
 window.addEventListener("scroll", updateScrollDots);
+window.addEventListener("load", updateScrollDots);
 
 document.querySelectorAll(".scroll-dot").forEach(dot => {
     dot.addEventListener("click", function() {
         const target = this.getAttribute("data-target");
-        scrollToSection(target);
+        const targetSection = document.querySelector(target);
+        if (targetSection && !targetSection.classList.contains('hidden')) {
+            scrollToSection(target);
+        }
     });
 });
 
-// ========================================
+
 // PHILOSOPHER CARD CLICKS
-// ========================================
 document.querySelectorAll(".philosopher-card").forEach(card => {
     card.addEventListener("click", (e) => {
         // Prevent triggering if clicking on a mini-card
@@ -704,9 +694,8 @@ document.querySelectorAll(".philosopher-card").forEach(card => {
     });
 });
 
-// ========================================
+
 // INITIALIZE
-// ========================================
 document.addEventListener("DOMContentLoaded", () => {
     startQuiz();
     updateScrollDots();

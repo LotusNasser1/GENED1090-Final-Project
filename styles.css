@@ -23,10 +23,13 @@
 
 body {
     font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif;
-    background-color: var(--white);
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    padding: 20px 0;
 }
 
 .hidden {
@@ -42,12 +45,16 @@ body {
 /* Hero */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 95vh;
     background: linear-gradient(180deg, #FFE5B4 0%, var(--light-green) 50%, var(--baby-green) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    scroll-snap-align: start;
+    margin: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .mountain-bg {
@@ -222,22 +229,33 @@ body {
 
 /* Intro */
 .intro-section {
-    min-height: 100vh;           /* fill at least one full screen */
+    min-height: 95vh;
     padding: 80px 0;
-    background: var(--white);
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--baby-green) 100%);
     text-align: center;
     position: relative;
-    display: flex;               /* center content vertically */
+    display: flex;
     align-items: center;
+    scroll-snap-align: start;
+    margin: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .intro-section .container {
     width: 100%;
 }
 
-/* small spacing tweak for the new button */
-.intro-start-btn {
+.intro-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.intro-buttons .btn-primary {
+    min-width: 200px;
 }
 
 
@@ -303,9 +321,13 @@ body {
 
 /* QUIZ / STORY */
 .story-section {
-    min-height: 100vh;
+    min-height: 95vh;
     padding: 60px 0;
-    background: linear-gradient(135deg, #FFE5B4 0%, var(--light-green) 100%);
+    background: linear-gradient(135deg, var(--baby-green) 0%, var(--light-green) 100%);
+    scroll-snap-align: start;
+    margin: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .story-area {
@@ -442,12 +464,16 @@ body {
 
 /* RESULTS */
 .results-section {
-    min-height: 100vh;
+    min-height: 95vh;
     padding: 60px 0;
-    background: linear-gradient(135deg, #FFE5B4 0%, var(--light-green) 100%);
+    background: linear-gradient(135deg, var(--baby-green) 0%, var(--light-green) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: start;
+    margin: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .results-area {
@@ -535,8 +561,13 @@ body {
 
 /* Grove Section */
 .grove-section {
+    min-height: 95vh;
     padding: 80px 0;
-    background: linear-gradient(180deg, var(--white) 0%, var(--light-green) 100%);
+    background: linear-gradient(180deg, var(--light-green) 0%, var(--baby-green) 100%);
+    scroll-snap-align: start;
+    margin: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .grove-section h2 {
@@ -636,8 +667,13 @@ body {
 
 /* Detail Section */
 .detail-section {
+    min-height: 95vh;
     padding: 70px 0;
     background: linear-gradient(135deg, var(--light-green), var(--baby-green));
+    scroll-snap-align: start;
+    margin: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .detail-area {
